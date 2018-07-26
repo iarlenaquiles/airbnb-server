@@ -11,9 +11,10 @@ class Property extends Model {
         - radians(${longitude})
         + sin(radians(${latitude}))
         * sin(radians(latitude))))`
+        
         return query
             .select('*', Databese.raw(`${haversine} as distance`))
-            .whereRaw(`${haversine} < ${distance}`);
+            .whereRaw(`${haversine} < ${distance}`)
     }
 
     user() {
