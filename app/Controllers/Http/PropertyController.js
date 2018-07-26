@@ -12,13 +12,6 @@ class PropertyController {
   }
 
   /**
-   * Render a form to be used for creating a new property.
-   * GET properties/create
-   */
-  async create ({ request, response, view }) {
-  }
-
-  /**
    * Create/save a new property.
    * POST properties
    */
@@ -30,13 +23,6 @@ class PropertyController {
    * GET properties/:id
    */
   async show ({ params, request, response, view }) {
-  }
-
-  /**
-   * Render a form to update an existing property.
-   * GET properties/:id/edit
-   */
-  async edit ({ params, request, response, view }) {
   }
 
   /**
